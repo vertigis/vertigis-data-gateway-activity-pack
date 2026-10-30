@@ -1,0 +1,39 @@
+{
+    "name": "@vertigis/vertigis-data-gateway-activities",
+    "version": "0.0.0-semantically-released",
+    "private": true,
+    "description": "",
+    "license": "MIT",
+    "author": "VertiGIS",
+    "homepage": "https://github.com/vertigis/vertigis-data-gateway-activities#readme",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vertigis/vertigis-data-gateway-activities.git"
+    },
+    "scripts": {
+        "build": "vertigis-workflow-sdk build",
+        "generate": "vertigis-workflow-sdk generate",
+        "start": "vertigis-workflow-sdk start",
+        "lint": "eslint --ext .ts,.tsx",
+        "prettier": "prettier --write \"**/*.json\" \"**/*.js\" \"**/*.ts\" \"**/*.tsx\"",
+        "generate:api:remote": "openapi-typescript https://1engage.us.1spatial.com/v3/api-docs/1dg-public -o src/api/generated/types.ts"
+    },
+    "devDependencies": {
+        "@vertigis/workflow": "5.53.0",
+        "@vertigis/workflow-sdk": "6.1.1",
+        "openapi-typescript": "^7.10.0",
+        "prettier": "^3.3.1",
+        "typescript": "^5.4.3"
+    },
+    "allowScripts": {
+        "@mui/x-telemetry": false,
+        "@vaadin/vaadin-usage-statistics": false
+    },
+    "browserslist": [
+        "last 2 chrome versions",
+        "last 2 edge versions",
+        "last 2 firefox versions",
+        "last 2 safari versions"
+    ]
+}
