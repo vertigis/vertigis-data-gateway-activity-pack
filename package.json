@@ -1,7 +1,7 @@
 {
     "name": "@vertigis/vertigis-data-gateway-activity-pack",
     "version": "0.0.0-semantically-released",
-    "private": true,
+    "private": false,
     "description": "",
     "license": "MIT",
     "author": "VertiGIS",
