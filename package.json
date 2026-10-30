@@ -11,6 +11,16 @@
         "type": "git",
         "url": "git+https://github.com/vertigis/vertigis-data-gateway-activities.git"
     },
+    "keywords": [
+        "VertiGIS",
+        "Geocortex",
+        "Workflow",
+        "1Engage",
+        "Data Gateway",
+        "1Spatial",
+        "ArcGIS",
+        "GIS"
+    ],
     "scripts": {
         "build": "vertigis-workflow-sdk build",
         "generate": "vertigis-workflow-sdk generate",
