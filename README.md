@@ -1,5 +1,5 @@
-[![CI/CD](https://github.com/vertigis/vertigis-data-gateway-activities/workflows/CI/CD/badge.svg)](https://github.com/vertigis/vertigis-data-gateway-activities)
-[![npm](https://img.shields.io/npm/v/@vertigis/workflow-activities-state-manager)](https://www.npmjs.com/package/@vertigis/vertigis-data-gateway-activities)
+[![CI/CD](https://github.com/vertigis/vertigis-data-gateway-activity-pack/workflows/CI/CD/badge.svg)](https://github.com/vertigis/vertigis-data-gateway-activities)
+[![npm](https://img.shields.io/npm/v/@vertigis/vertigis-data-gateway-activity-pack)](https://www.npmjs.com/package/@vertigis/vertigis-data-gateway-activity-pack)
 
 # VertiGIS Data Gateway Workflow Activities
 
