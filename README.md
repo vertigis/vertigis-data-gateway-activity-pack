@@ -20,23 +20,6 @@ The pack uses OpenAPI-generated TypeScript definitions to provide strongly typed
 
 ---
 
-## Requirements
-
-### Supported Workflow Version
-
-| Package | Version |
-|----------|----------|
-| @vertigis/workflow | 5.53.0 |
-| @vertigis/workflow-sdk | 6.1.1 |
-
-### Development Requirements
-
-- Node.js 20+
-- npm 10+
-- TypeScript 5+
-
----
-
 ## Installation
 
 Install project dependencies:
@@ -131,7 +114,7 @@ Do not manually edit the generated file.
 
 ## Authentication
 
-Data Gateway Service require:
+Data Gateway Service requires:
 
 | Input | Description |
 |---------|---------|
@@ -188,20 +171,6 @@ type Submission =
 
 ---
 
-## Building for Deployment
-
-Build the activity pack:
-
-```bash
-npm run build
-```
-
-Generated output is placed in the build artifacts produced by the Workflow SDK.
-
-Deploy according to your organization's VertiGIS Studio Workflow deployment process.
-
----
-
 ## Contributing
 
 When adding activities:
@@ -217,13 +186,20 @@ When adding activities:
 6. Keep activities as thin wrappers.
 
 ---
+### Register the VertiGIS Data Gateway activity pack
 
-## Versioning
-
-Versioning is managed manually through `package.json`.
-
-If Semantic Release is adopted in the future, updates should be made to:
-
-- package.json
-- CI/CD pipeline
-- CHANGELOG generation
+1. Sign in to ArcGIS Online or Portal for ArcGIS
+1. Go to **My Content**
+1. Select **Add Item > An application**
+    - Type: `Web Mapping`
+    - Purpose: `Ready To Use`
+    - API: `JavaScript`
+    - URL: The URL to this activity pack manifest
+        - Use https://unpkg.com/@vertigis/vertigis-data-gateway-activity-pack@1.0.0/activitypack.json for a specific version
+        - Use https://unpkg.com/@vertigis/vertigis-data-gateway-activity-pack@1/activitypack.json for the latest revision of a specific major version
+        - Use https://unpkg.com/@vertigis/vertigis-data-gateway-activity-pack/activitypack.json for the latest version (not recommended for production use)
+        - Use https://localhost:5000/activitypack.json for a local development version
+    - Title: Your desired title
+    - Tags: Must include `geocortex-workflow-activity-pack`
+1. Reload [VertiGIS Studio Workflow Designer](https://apps.vertigisstudio.com/workflow/designer/)
+1. The State Manager activities will now appear in the activity toolbox in a `VertiGIS Data Gateway` category
