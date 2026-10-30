@@ -42,6 +42,8 @@ export interface UploadSubmissionInputOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName inputParameter
  * @description Uploads an input file to a Data Gateway submission.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class UploadSubmissionInput implements IActivityHandler {
     public async execute( inputs: UploadSubmissionInputInputs ): Promise<UploadSubmissionInputOutputs> {

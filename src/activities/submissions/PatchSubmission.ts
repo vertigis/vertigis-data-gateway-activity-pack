@@ -43,6 +43,8 @@ export interface PatchSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Updates a submission's configuration and metadata. This  can be used to modify automation settings, notification preferences, and submission field values.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class PatchSubmission implements IActivityHandler {
 

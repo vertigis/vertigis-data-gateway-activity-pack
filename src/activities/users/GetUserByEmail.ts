@@ -37,6 +37,8 @@ export interface GetUserByEmailOutputs {
  * @category VertiGIS Data Gateway - Users
  * @defaultName user
  * @description Retrieves a user profile from the VertiGIS Data Gateway using an email address.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class GetUserByEmail implements IActivityHandler {
 

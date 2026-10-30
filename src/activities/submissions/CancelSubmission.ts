@@ -35,6 +35,8 @@ export interface CancelSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Cancels a submission. The returned submission contains the updated state and outcome information following the cancellation.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class CancelSubmission implements IActivityHandler {
 

@@ -40,6 +40,8 @@ export interface GetSubmissionsOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submissions
  * @description Retrieves a paginated list of submissions from the VertiGIS Data Gateway using the supplied filtering and pagination criteria.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class GetSubmissions implements IActivityHandler {
 

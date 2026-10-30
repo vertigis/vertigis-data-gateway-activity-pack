@@ -48,6 +48,8 @@ export interface CreateSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Creates a new submission for an assignment and returns the submission details.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class CreateSubmission implements IActivityHandler {
 

@@ -37,6 +37,8 @@ export interface StartSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Starts a submission after all required files and parameters have been uploaded and configured. Returns the updated submission including its current processing state.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class StartSubmission implements IActivityHandler {
 

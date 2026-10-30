@@ -37,6 +37,8 @@ export interface GetSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Retrieves the details of a submission from the VertiGIS Data Gateway using its submission reference.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class GetSubmission implements IActivityHandler {
 

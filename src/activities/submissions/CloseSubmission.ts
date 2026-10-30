@@ -34,6 +34,8 @@ export interface CloseSubmissionOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName submission
  * @description Closes a finished submission. The returned submission contains the updated state, outcome, and closure information.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class CloseSubmission implements IActivityHandler {
 

@@ -37,6 +37,8 @@ export interface GetAssignmentOutputs {
  * @category VertiGIS Data Gateway - Assignments
  * @defaultName assignment
  * @description Retrieves the details of an assignment from the VertiGIS Data Gateway using its assignment key.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class GetAssignment implements IActivityHandler {
 

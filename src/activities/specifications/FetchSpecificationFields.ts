@@ -37,6 +37,8 @@ export interface FetchSpecificationFieldsOutputs {
  * @category VertiGIS Data Gateway - Specifications
  * @defaultName fields
  * @description Retrieves the metadata field definitions for a specification. The returned fields can be used to determine available submission metadata and field requirements.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class FetchSpecificationFields implements IActivityHandler {
 

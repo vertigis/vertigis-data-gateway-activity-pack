@@ -40,6 +40,8 @@ export interface DescribeInputsOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName inputs
  * @description Retrieves the available inputs for a submission, including upload requirements, data store configuration, and input metadata.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class DescribeInputs implements IActivityHandler {
 

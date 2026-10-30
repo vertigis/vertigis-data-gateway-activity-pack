@@ -37,6 +37,8 @@ export interface CreateDataGatewayServiceOutputs {
  * @category VertiGIS Data Gateway - Service
  * @defaultName dataGatewayService
  * @description Creates a VertiGIS Date Gateway Service for use with the Data Gateway Actvities.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class CreateDataGatewayService implements IActivityHandler {
 

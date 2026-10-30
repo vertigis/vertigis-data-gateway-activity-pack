@@ -51,6 +51,8 @@ export interface PatchInputParametersOutputs {
  * @category VertiGIS Data Gateway - Submissions
  * @defaultName parameters
  * @description Replaces or inserts input parameter values for a submission and returns the updated parameter configuration.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class PatchInputParameters implements IActivityHandler {
 

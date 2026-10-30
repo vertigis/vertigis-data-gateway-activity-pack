@@ -49,6 +49,8 @@ export interface GetMyAssignmentsOutputs {
  * @category VertiGIS Data Gateway - Assignments
  * @defaultName assignments
  * @description Retrieves a paginated list of assignments available to the authenticated user.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class GetMyAssignments implements IActivityHandler {
 

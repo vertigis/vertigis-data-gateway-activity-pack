@@ -2,9 +2,7 @@ import type { IActivityHandler } from "@vertigis/workflow";
 
 import { DataGatewayClient } from "../../api/DataGatewayClient";
 import { DataGatewayService } from "../../api/DataGatewayService";
-/**
- * Input parameters for downloading a submission output.
- */
+
 export interface DownloadSubmissionOutputInputs {
 
     /**
@@ -34,9 +32,7 @@ export interface DownloadSubmissionOutputInputs {
     formatName?: string;
 }
 
-/**
- * Output returned after downloading a submission output.
- */
+
 export interface DownloadSubmissionOutputOutputs {
 
     /**
@@ -54,6 +50,8 @@ export interface DownloadSubmissionOutputOutputs {
  * @category Data Gateway - Submissions
  * @defaultName submissionOutput
  * @description Downloads an output file from a Data Gateway submission by matching the specified output format name.
+ * @clientOnly
+ * @supportedApps GWV, EXB
  */
 export default class DownloadSubmissionOutput implements IActivityHandler {
 
